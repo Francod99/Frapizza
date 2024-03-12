@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Restaurantes</title>
+    <script
+      src="https://kit.fontawesome.com/283335a286.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <header class="encabezado">
+      <div class="contenedor-navegacion">
+        <div class="contenido-navegacion contenedor">
+          <div class="logo">
+            <h2>
+              <span class="verde">Fra</span><span>pi</span
+              ><span class="rojo">zzas</span>
+            </h2>
+          </div>
+          <nav class="navegacion ocultar">
+            <a href="#texto-encabezado" class="selected">Inicio</a>
+            <a href="#texto-nosotros" class="selected">Sobre Nosotros</a>
+            <a href="#texto-platillos" id="menu" class="selected">Menú</a>
+            <a href="#texto-chef">Chef</a>
+            <a href="#informacion-contacto" id>Contacto</a>
+            <a href="#">Compras</a>
+          </nav>
+          <div class="hamburguesa"><span></span><span></span><span></span></div>
+        </div>
+        <div>
+          <ul>
+            <li class="submenu">
+              <img src="img/car.svg" id="img-carrito" alt="" />
+              <div id="carrito">
+                <table id="lista-del-carrito">
+                  <thead>
+                    <tr>
+                      <th>imagen</th>
+                      <th>nombre</th>
+                      <th>precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contenido-header">
+        <div class="contenedor-encabezado">
+          <div class="texto-encabezado" id="texto-encabezado">
+            <h2>Welcome !</h2>
+            <a href="#texto-platillos" class="btn bordes">Nuestro Menu</a>
+          </div>
+          <video autoplay loop muted>
+            <source src="img/Pizza HD.mp4" />
+          </video>
+        </div>
+      </div>
+    </header>
+
+    <div class="contenedor-nosotros contenedor">
+      <div class="texto-nosotros" id="texto-nosotros">
+        <p class="bienvenida">Bienvenido a!</p>
+        <h1>Restaurante Fapizza</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem, fugiat delectus porro suscipit architecto ab impedit
+          accusantium quod voluptate quaerat odio sunt quisquam odit, sapiente
+          aut esse possimus nulla totam! Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Voluptate eveniet placeat nesciunt harum similique
+          ab, illo debitis ullam ipsa labore quidem vitae sunt et quasi
+          veritatis? Excepturi ex non cumque.
+        </p>
+        <a href="#informacion-contacto" class="btn btn-rojo">Contactar</a>
+      </div>
+
+      <div class="imagenes-nosotros">
+        <div class="imagen1">
+          <img
+            data-src="img/fotor-ai-2024031233022.jpg"
+            alt="mujer comiendo pizza"
+          />
+        </div>
+        <div class="imagenes2">
+          <img
+            data-src="assets/img/nosotros2.webp"
+            alt=""
+          />
+          <img data-src="img/fotor-ai-2024031233123.jpg" alt="plato con pasta" />
+        </div>
+      </div>
+    </div>
+
+    <section class="menu contenedor">
+      <h2 class="texto-platillos" id="texto-platillos">Platillos populares</h2>
+      <div class="botones-platillos">
+        <button class="todos btn btn-verde">Todos</button>
+        <button class="ensaladas btn btn-verde">Ensaladas</button>
+        <button class="pasta btn btn-verde">Pasta</button>
+        <button class="pizza btn btn-verde">Pizza</button>
+        <button class="postres btn btn-verde">Postres</button>
+      </div>
+      <div class="platillos">
+        <div class="platillo" data-platillo="ensalada">
+          <img data-src="assets/img/ensalada.webp" alt="ensalada" />
+          <h2>ensalada Russa</h2>
+          <p>huevo, mayonesa, zanahoria.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="ensalada">
+          <img data-src="assets/img/ensalada2.webp" alt="ensalada" />
+          <h2>ensalada con tomate y aceitunas</h2>
+          <p>cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <a href="#" class="fas fa-shopping-basket" data-id="1"
+              >agregar al carrito</a
+            >
+          </div>
+        </div>
+        <div class="platillo" data-platillo="ensalada">
+          <img data-src="assets/img/ensalada2.webp" alt="ensalada" />
+          <h2>ensalada3</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pasta">
+          <img data-src="assets/img/pasta1.webp" alt="pasta" />
+          <h2>ñoquis</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pasta">
+          <img data-src="assets/img/pasta2.webp" alt="pasta" />
+          <h2>fideos</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pasta">
+          <img data-src="assets/img/pasta2.webp" alt="pasta" />
+          <h2>fideos2</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pizza">
+          <img data-src="assets/img/pizza1.webp" alt="pizza" />
+          <h2>Muzzarela</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pizza">
+          <img data-src="assets/img/pizza2.webp" alt="pizza" />
+          <h2>Jamon y Morron</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pizza">
+          <img data-src="assets/img/pizza2.webp" alt="pizza" />
+          <h2>Calabresa</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img data-src="assets/img/postres1.webp" alt="postre" />
+          <h2>Budin</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img data-src="assets/img/postres2.webp" alt="postre" />
+          <h2>Cheesscake</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img data-src="assets/img/postres2.webp" alt="postre" />
+          <h2>Dulce y Membrillo</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="separador">
+      <div class="contenido-separador contenedor">
+        <h2>Elige tu comida para empezar el día</h2>
+        <p>Empieza tu día comiedo deliciosa comida o un café</p>
+        <a href="#texto-platillos" class="btn btn-verde">Ordenar ahora</a>
+      </div>
+    </div>
+
+    <section class="chef contenedor">
+      <h2>Chef ejecutivo</h2>
+      <div class="contenido-chef">
+        <div class="texto-chef" id="texto-chef">
+          <h3>
+            La exelencia está en la diversidad y el modo de progresar es conocer
+            y comparar las diversidades de productos, culturas y técnicas
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus corporis dolores eveniet vitae, natus tempora
+            recusandae hic laborum error ducimus repellat, laudantium temporibus
+            tenetur totam sint consequuntur eligendi! Asperiores, ad.
+          </p>
+          <a href="#" class="btn btn-verde">Leer Bíografia</a>
+        </div>
+        <div class="imagen-chef">
+          <img data-src="/assets/img/chef.webp" alt="fotografia del chef" />
+        </div>
+      </div>
+    </section>
+
+    <div class="formulario-contacto contenedor">
+      <div class="informacion-contacto" id="informacion-contacto">
+        <h3>Contactanos</h3>
+        <p><i class="fas fa-map-marker-alt"></i>Argentina Buenos aires</p>
+        <p><i class="fas fa-envelope"></i> asd@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i>+014342543554</p>
+        <div class="redes-sociales">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+
+      <form class="formulario">
+        <div class="input-formulario">
+          <label for="nombre">Nombre</label>
+          <input type="text" placeholder="Nombre" id="nombre" />
+        </div>
+        <div class="input-formulario">
+          <label for="apellidos">Apellido</label>
+          <input type="text" placeholder="Apellido" id="apellidos" />
+        </div>
+        <div class="input-formulario">
+          <label for="correo">Correo</label>
+          <input type="email" placeholder="ejemplo@gmail.com" id="correo" />
+        </div>
+        <div class="input-formulario">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" placeholder="+01 435566234" id="telefono" />
+        </div>
+        <div class="input-formulario">
+          <label for="mensaje">Mensaje</label>
+          <textarea></textarea>
+        </div>
+        <div class="btn-formulario">
+          <input type="submit" class="btn btn-verde" value="Enviar" />
+        </div>
+      </form>
+    </div>
+    <div class="pie-pagina">
+      <div class="contenedor-piepagina contenedor">
+        <div class="info">
+          <h3>Dirección</h3>
+          <p>Buenos Aires</p>
+        </div>
+        <div class="info">
+          <h3>Días especiales</h3>
+          <p>Lunes y Viernes 10am - 14pm</p>
+          <p>+01 43242345434</p>
+        </div>
+        <div class="info">
+          <h3>Horarios</h3>
+          <p>Lunes - Domingo 10am - 15pm</p>
+          <div class="redes-sociales redes-pie">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Noticias</h3>
+          <p>suscribete para recibir más noticias</p>
+          <input type="email" placeholder="Tu correo" />
+          <input type="submit" class="btn btn-verde" value="Suscribirse" />
+        </div>
+        |
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Todos los derechos reservados &copy; 2023 Restaurante Fapizza</p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
